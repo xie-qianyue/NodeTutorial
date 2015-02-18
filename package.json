@@ -14,9 +14,10 @@
   "author": "XIE Qianyue",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "~0.18.0",
+    "eventproxy": "^0.3.2",
     "express": "^4.11.2",
-    "utility": "^1.3.0",
     "superagent": "~0.21.0",
-    "cheerio": "~0.18.0"
+    "utility": "^1.3.0"
   }
 }

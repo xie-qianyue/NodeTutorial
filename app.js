@@ -2,6 +2,10 @@ var express = require('express');
 var utility = require('utility');
 var superagent = require('superagent');
 var cheerio = require('cheerio');
+var eventproxy = require('eventproxy');
+var url = require('url');
+
+var doubanUrl = 'http://www.douban.com';
 
 var app = express();
 
@@ -25,21 +29,23 @@ app.get('/spider', spider, function(req, res){
 // next : route middleware
 function spider(req, res, next){
 	superagent
-		.get('http://d.weibo.com/')
+		.get(doubanUrl)
 		.end(function (err, sres){
 			if(err){
-				return next(err);		
+				// return next(err);
+				return console.error(err);
 			}
-		
+			
+			var groupsUrls = [];
 			// $ : object of cheerio convention 
 			var $ = cheerio.load(sres.text);
 			var items = [];
-			$('.WB_info > a').each(function(idx, element){
+			$('.group-list').find('.title > a').each(function(idx, element){
 				// $ : object of JQuery convention
 				var $element = $(element);
 				items.push({
-					title : $element.attr('title')	
-					// href : $element.attr('href')
+					title : $element.text(),	
+					href : $element.attr('href')
 				});
 			});
 
