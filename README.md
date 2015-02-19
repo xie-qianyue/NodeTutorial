@@ -8,7 +8,7 @@ express;
 utility.  
 
 asyncSpider :
-An example of spider application.
+An example of spider application.  
 dependencies:  
 superagent : ajax utility;  
 cheerio : JQuery utility on the server side;  
