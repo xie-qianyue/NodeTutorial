@@ -1,0 +1,28 @@
+{
+  "name": "simpleExample",
+  "version": "0.0.1",
+  "description": "a simple example of Hello World",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xie-qianyue/NodeTutorial.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "hello",
+    "world"
+  ],
+  "author": "xie qianyue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xie-qianyue/NodeTutorial/issues"
+  },
+  "dependencies": {
+    "express": "~4.11.2",
+    "utility": "~1.3.0"
+  }
+}

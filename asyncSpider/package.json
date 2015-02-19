@@ -1,0 +1,30 @@
+{
+  "name": "asyncSpider",
+  "version": "0.0.1",
+  "description": "An asynchrounous spider to fetch the topics of the groups in the main page of douban",
+  "main": "asyncSpider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xie-qianyue/NodeTutorial.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "tutorial",
+    "async"
+  ],
+  "author": "xie qianyue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xie-qianyue/NodeTutorial/issues"
+  },
+  "dependencies": {
+    "cheerio": "~0.18.0",
+    "eventproxy": "~0.3.2",
+    "express": "^4.11.2",
+    "superagent": "~0.21.0"
+  }
+}
