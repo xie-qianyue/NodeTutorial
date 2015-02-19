@@ -26,7 +26,7 @@ function simpleSpider(req, res, next){
 				// return next(err);
 				return console.error(err);
 			}
-			
+
 			// $ : object of cheerio convention 
 			var $ = cheerio.load(sres.text);
 			var items = [];
@@ -80,8 +80,8 @@ function spider(req, res, next){
 					var $ = cheerio.load(groupHtml);
 					return ({
 						groupTitle:$('h1').text().trim(),
-						href:groupUrl,
-						firstTopic:$('.title > a').eq(0).attr('title'),
+						   href:groupUrl,
+						   firstTopic:$('.title > a').eq(0).attr('title'),
 					});
 				});
 				console.log(group_topics);
@@ -91,11 +91,11 @@ function spider(req, res, next){
 
 			groupsUrls.forEach(function(groupUrl){
 				superagent.get(groupUrl)
-					.end(function(err, res){
-						console.log('fetch ' + groupUrl + ' successful');
-						// register event 'group_html'
-						ep.emit('group_html', [groupUrl, res.text]);
-					});
+				.end(function(err, res){
+					console.log('fetch ' + groupUrl + ' successful');
+					// register event 'group_html'
+					ep.emit('group_html', [groupUrl, res.text]);
+				});
 			});	
 
 		});			
