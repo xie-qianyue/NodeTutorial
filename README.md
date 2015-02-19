@@ -3,9 +3,9 @@
 simpleExample :
 A simple example of 'Hello World'.
 It also includes a example of getting a MD5 value of a request parameter.
-Dependencies :</br>
-express;</br>
-utility.</br>
+Dependencies :  
+express;  
+utility.  
 
 asyncSpider :
 An example of spider application.
