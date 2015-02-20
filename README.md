@@ -1,13 +1,13 @@
-# NodeTutorial
+# Node Tutorial
 
-simpleExample :
+simpleExample :  
 A simple example of 'Hello World'.
 It also includes a example of getting a MD5 value of a request parameter.  
 Dependencies :  
 express;  
 utility.  
 
-asyncSpider :
+asyncSpider :  
 An example of spider application.  
 dependencies:  
 superagent : ajax utility;  
