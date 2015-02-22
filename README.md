@@ -24,6 +24,7 @@ Dependency :
 An example of a unit test. It is suported by [**mocha**](http://mochajs.org/) and [**istanbul**](https://github.com/gotwarlost/istanbul).  
 Dependency :  
 - [should.js](https://github.com/tj/should.js) : an assertion utility.  
+
 Install mocha and istanbul globally :
 >$ npm install mocha -g  
 >$ npm install instanbul -g
