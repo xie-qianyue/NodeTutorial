@@ -29,6 +29,14 @@ Install mocha and istanbul globally :
 >$ npm install mocha -g  
 >$ npm install instanbul -g
   
+To run mocha for test :  
+>$ mocha  
   
+To run istanbul for code coverage :  
+>$ istanbul cover _mocha  
+  
+You will find a coverage report in : YOUR_PROJECT_FOLDER/coverage/lcov-report/index.html  
+
+##License  
 This tutorial project is under MIT license.   
 Thanks to [alsotang](https://github.com/alsotang/node-lessons). The project is inspired and referrenced to his tutorial project.
