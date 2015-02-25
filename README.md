@@ -1,5 +1,16 @@
 # Node Tutorial
 
+##set up environment
+1. install [**nvm**](https://github.com/creationix/nvm)(Node Version Manager);
+2. install node by nvm, following is the commande of install the version 0.10 :  
+`$ nvm install 0.10`  
+Now you can see all the version that you have installed by the commande :   
+`$ nvm ls`  
+If you have installed several versions, you can use this commande to choose the version which you want to use :  
+`$ nvm use 0.10`  
+3. set default version :  
+`$ nvm alias default 0.10`
+
 ##simpleExample :  
 A simple example of 'Hello World'.
 It also includes a example of getting a MD5 value of a request parameter.  
