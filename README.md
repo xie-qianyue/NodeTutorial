@@ -50,7 +50,7 @@ To run istanbul for code coverage :
 You will find a coverage report in : YOUR_PROJECT_FOLDER/coverage/lcov-report/index.html  
 
 ##testBrowser
-An example of a browser test. It is suported by mocha, [**chai.js**](http://chaijs.com/) and [PhantomJS](http://phantomjs.org/).  
+An example of a browser test. It is suported by mocha, [**chai.js**](http://chaijs.com/) and [**PhantomJS**](http://phantomjs.org/).  
 Dependency :  
 - mocha;
 - chai.js : an assertion utility;
@@ -85,7 +85,7 @@ describe('simple test', function() {
 ```
 For using chai.js, we can download it from [here](http://chaijs.com/chai.js), and import it in the index.html.  
   
-We can use PhantomJS to make the test suitable for the command-line testing and to integrate it to the continuous integration system. In this example, I chosse a mocha PhantomJS mixed tool : [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs).  
+We can use **PhantomJS** to make the test suitable for the command-line testing and to integrate it to the continuous integration system. In this example, I chosse a mocha PhantomJS mixed tool : [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs).  
 Install it by npm :  
 >$ npm g -i mocha-phantomjs;  
 
