@@ -12,24 +12,23 @@ If you have installed several versions, you can use this commande to choose the 
 `$ nvm alias default 0.10`
 
 ##simpleExample :  
-A simple example of 'Hello World'.
-It also includes a example of getting a MD5 value of a request parameter.  
+A simple example of 'Hello World' and a example of getting a MD5 value of a request parameter.  
 Dependencies :  
-- express;  
-- utility.  
+- [express](http://expressjs.com/);  
+- [utility](https://github.com/node-modules/utility), in this example we use it to generate the md5 value.  
 
 ##asyncSpider :  
 An example of spider application.  
 Dependencies :  
 - express  
-- superagent : ajax utility;  
-- cheerio : JQuery utility on the server side;  
-- eventproxy : a utility simplifies event handler process.
+- [superagent](http://visionmedia.github.io/superagent/) : ajax utility;  
+- [cheerio](https://github.com/cheeriojs/cheerio) : JQuery utility on the server side;  
+- [eventproxy](https://github.com/JacksonTian/eventproxy) : a utility simplifies event handler process.
 
 ##asyncControle :  
 An example of controlling the times and the delay of concurrent asynchronous requests.  
 Dependency :  
-- async : a utility to controle the request.  
+- [async](https://github.com/caolan/async) : a utility to controle the request.  
 
 ##testMocha :  
 An example of a unit test. It is suported by [**mocha**](http://mochajs.org/) and [**istanbul**](https://github.com/gotwarlost/istanbul).  
