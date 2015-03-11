@@ -1,0 +1,17 @@
+{
+  "name": "testBrowser2",
+  "version": "1.0.0",
+  "description": "test of the browser with Zombie and request",
+  "main": "",
+  "scripts": {
+    "test": "mocha testZombieWithMocha.js",
+		"test": "mocha testRequestWithMocha.js"
+  },
+  "author": "xie qianyue",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.53.0",
+    "should": "^5.1.0",
+    "zombie": "^2.5.1"
+  }
+}
