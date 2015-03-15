@@ -1,0 +1,29 @@
+{
+  "name": "benchmarkTest",
+  "version": "1.0.0",
+  "description": "A performance test using benchmark",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xie-qianyue/NodeTutorial.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "benchmark",
+    "perf",
+    "performance"
+  ],
+  "author": "xie qianyue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xie-qianyue/NodeTutorial/issues"
+  },
+  "homepage": "https://github.com/xie-qianyue/NodeTutorial",
+  "dependencies": {
+    "benchmark": "^1.0.0"
+  }
+}
