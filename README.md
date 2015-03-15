@@ -11,7 +11,7 @@ If you have installed several versions, you can use this commande to choose the 
 3. set default version :  
 `$ nvm alias default 0.10`
 
-##simpleExample :  
+##simpleExample  
 The first example of 'Hello World' and a example of getting a MD5 value of a request parameter.  
 ###package.json
 All npm packages contain a file, usually in the project root, called **package.json** - this file holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. It can also contain other metadata such as a project description, the version of the project in a particular distribution, license information, even configuration data - all of which can be vital to both npm and to the end users of the package. The package.json file is normally located at the root directory of a Node.js project. [1]  
@@ -20,7 +20,7 @@ Use the following command to initialize package.json:
 >$ npm init 
 
 This will ask you a bunch of questions, and then write a package.json for you.[2]  
-###Dependencies :  
+###Dependencies  
 - [express](http://expressjs.com/);  
 - [utility](https://github.com/node-modules/utility), in this example we use it to generate the md5 value.  
 
@@ -35,22 +35,22 @@ The --save option instructs NPM to include the package inside of the dependencie
 [1]: https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json  "What is the file `package.json`?"  
 [2]: https://docs.npmjs.com/cli/init "Interactively create a package.json file"  
 
-##asyncSpider :  
+##asyncSpider  
 An example of spider application.  
-Dependencies :  
+###Dependencies  
 - express  
 - [superagent](http://visionmedia.github.io/superagent/) : an ajax utility;  
 - [cheerio](https://github.com/cheeriojs/cheerio) : a JQuery utility on the server side;  
 - [eventproxy](https://github.com/JacksonTian/eventproxy) : a utility simplifies event handler process.
 
-##asyncControle :  
+##asyncControle  
 An example of controlling the times and the delay of concurrent asynchronous requests.  
-Dependency :  
+###Dependency  
 - [async](https://github.com/caolan/async) : a utility to controle the request.  
 
-##testMocha :  
+##testMocha  
 An example of a unit test. It is suported by [**mocha**](http://mochajs.org/) and [**istanbul**](https://github.com/gotwarlost/istanbul).  
-Dependency :  
+###Dependencies  
 - mocha :  a JavaScript test framework;
 - istanbul : a JavaScript codes coverage tool;
 - [should.js](https://github.com/tj/should.js) : an assertion utility.  
@@ -69,7 +69,7 @@ You will find a coverage report in : YOUR_PROJECT_FOLDER/coverage/lcov-report/in
 
 ##testBrowser
 An example of a browser test. It is suported by mocha, [**chai.js**](http://chaijs.com/) and [**PhantomJS**](http://phantomjs.org/).  
-Dependency :  
+###Dependencies  
 - mocha;
 - chai.js : an assertion utility;
 - PhantomJS : a headless testing utility of web applications.
@@ -119,7 +119,25 @@ Run the test in command-line :
 >$ mocha-phantomjs index.html.  
 
 ##testBrowser2
-An other example of the browser test on introducing [Zombie](http://zombie.labnotes.org/) and [request js](https://github.com/request/request).
+An other example of the browser test on introducing [Zombie](http://zombie.labnotes.org/) and [request js](https://github.com/request/request).  
+###Dependencies
+- mocha;
+- Zombie js;
+- request js;
+
+##benchmarkTest
+An example of performance test using [**benchmark**](https://github.com/bestiejs/benchmark.js). The test codes are in `main.js`. This example test three basic loop in JavaScript : 
+- basic for loop
+- basic while loop
+- for ... in loop
+
+###Dependency
+- benchmark
+
+To run the test, just run main.js :  
+>$ node main.js  
+
+For more loops test, see [Fastest array loops in Javascript](http://jsperf.com/fastest-array-loops-in-javascript/24).
 
 ##License  
 This tutorial project is under MIT license.   
