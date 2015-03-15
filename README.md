@@ -100,6 +100,9 @@ Modify the script in index.html :
 Run the test in command-line :  
 >$ mocha-phantomjs index.html.  
 
+##testBrowser2
+An other example of the browser test on introducing [Zombie](http://zombie.labnotes.org/) and [request js](https://github.com/request/request).
+
 ##License  
 This tutorial project is under MIT license.   
 Thanks to [alsotang](https://github.com/alsotang/node-lessons). The project is inspired and referrenced to his tutorial project.
