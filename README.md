@@ -12,10 +12,28 @@ If you have installed several versions, you can use this commande to choose the 
 `$ nvm alias default 0.10`
 
 ##simpleExample :  
-A simple example of 'Hello World' and a example of getting a MD5 value of a request parameter.  
-Dependencies :  
+The first example of 'Hello World' and a example of getting a MD5 value of a request parameter.  
+###package.json
+All npm packages contain a file, usually in the project root, called **package.json** - this file holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. It can also contain other metadata such as a project description, the version of the project in a particular distribution, license information, even configuration data - all of which can be vital to both npm and to the end users of the package. The package.json file is normally located at the root directory of a Node.js project. [1]  
+###Initialization of package.json
+Use the following command to initialize package.json:  
+>$ npm init 
+
+This will ask you a bunch of questions, and then write a package.json for you.[2]  
+###Dependencies :  
 - [express](http://expressjs.com/);  
 - [utility](https://github.com/node-modules/utility), in this example we use it to generate the md5 value.  
+
+####Install Dependencies
+Use this command to install the dependencies:  
+>$ npm install --save nameOfDependency  
+
+For example,  
+>$ npm install --save express  
+
+The --save option instructs NPM to include the package inside of the dependencies section of your package.json automatically, thus saving you an additional step.
+[1]: https://docs.nodejitsu.com/articles/getting-started/npm/what-is-the-file-package-json  "What is the file `package.json`?"  
+[2]: https://docs.npmjs.com/cli/init "Interactively create a package.json file"  
 
 ##asyncSpider :  
 An example of spider application.  
