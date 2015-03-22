@@ -18,6 +18,6 @@
 	"author": "xie qianyue",
 	"license": "MIT",
 	"dependencies": {
-		"mocha-phantomjs": "~3.53"
+		"mocha-phantomjs": "~3.5.3"
 	}
 }
