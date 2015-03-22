@@ -1,5 +1,7 @@
 # Node Tutorial
 
+![](https://travis-ci.org/xie-qianyue/NodeTutorial.svg?branch=master)
+
 ##set up environment
 1. install [**nvm**](https://github.com/creationix/nvm)(Node Version Manager);
 2. install node by nvm, following is the commande of install the version 0.10 :  
