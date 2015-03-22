@@ -1,0 +1,23 @@
+{
+  "name": "testBrowser1",
+  "version": "0.1.0",
+  "description": "A tutorial of client-side testing",
+  "main": "chai.js",
+  "scripts": {
+    "test": "mocha-phantomjs index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xie-qianyue/NodeTutorial/testBrowser"
+  },
+  "keywords": [
+    "node",
+    "browser",
+    "test"
+  ],
+  "author": "xie qianyue",
+  "license": "MIT",
+	"dependencies": {
+		"mocha-phantomjs": "~3.53"
+	}
+}
