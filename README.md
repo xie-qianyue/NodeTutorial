@@ -141,6 +141,19 @@ To run the test, just run main.js :
 
 For more loops test, see [Fastest array loops in Javascript](http://jsperf.com/fastest-array-loops-in-javascript/24).
 
+##Continuous Integration
+Using [Travis CI](http://docs.travis-ci.com/) for continuous integration.
+Create the travis configuration file `.travis.yml` in the root of the project. Here is my example :
+```
+    language: node_js
+    node_js:
+    - '0.10'
+    - '0.11'
+    before_script: cd testBrowser && npm install
+    script: npm test
+```
+In general, travis will run `npm install` automatically. Because my projects are in the subdirectories, I should tell travis to go the which subdirectory to install the dependencies and complete the tests.
+
 ##License  
 This tutorial project is under MIT license.   
 Thanks to [alsotang](https://github.com/alsotang/node-lessons). The project is inspired and referrenced to his tutorial project.
