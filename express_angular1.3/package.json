@@ -1,0 +1,19 @@
+{
+  "name": "express_angular1.3",
+  "version": "0.1.0",
+  "description": "a skeleton of express + angular1.3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "angular"
+  ],
+  "author": "xie qianyue",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
